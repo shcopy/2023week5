@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Admin - W5-dashboard-ver2</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js" ></script>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <!--導覽 nav-->
+    <nav class="nav flex-column bg-light">
+      <a class="nav-link link-dark active" aria-current="page" href="#"><img src="../assets/images/logo-ANSWER.svg"/></a>
+      <a class="nav-link link-dark" href="#">Dashboard</a>
+      <a class="nav-link link-dark" href="#"><span class="material-icons">question_answer</span>Question</a>
+      <a class="nav-link link-dark" href="#"><span class="material-icons">assignment</span>Assignment</a>
+      <a class="nav-link link-dark" href="#"><span class="material-icons">video_library</span>Course</a>
+      <a class="nav-link link-success" href="admin.html"><span class="material-icons">supervisor_account</span>Admin</a>
+      <a class="nav-link link-dark" href="#"><span class="material-icons">settings</span>Setting</a>
+  </nav>
+
+    <!-- 主畫面 -->
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12">
+
+            <div class="d-flex p-2 bd-highlight"><span>Admin</span><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-decoration-none link-dark"><span class="material-icons">add</span>Add New Admin</a></div>
+            <span class="material-icons">expand_more</span>
+            <span class="material-icons">search</span>
+            <span class="material-icons">notifications_active</span>
+            <table class="table table-hover">
+              <thead>
+                <tr scope="col">
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Verified</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">#1</th>
+                  <td>Emir Wicks</td>
+                  <td>emir.wicks@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#2</th>
+                  <td>Zaina Goldsmith</td>
+                  <td>zaina.goldsmith@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#3</th>
+                  <td>Mahima Lopez</td>
+                  <td>mahima.lopez@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#4</th>
+                  <td>Pharrell Murray</td>
+                  <td>Pharrell Murray</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#5</th>
+                  <td>Annika Mcbride</td>
+                  <td>Annika Mcbride</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#6</th>
+                  <td>Fatimah Clark</td>
+                  <td>Fatimah Clark</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#7</th>
+                  <td>Klaudia Rhodes</td>
+                  <td>Klaudia Rhodes</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#8</th>
+                  <td>Tillie Lucero</td>
+                  <td>Klaudia Rhodes</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#9</th>
+                  <td>Sabrina Stephenson</td>
+                  <td>Klaudia Rhodes</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#10</th>
+                  <td>Annie Smith</td>
+                  <td>Klaudia Rhodes</td>
+                  <td>Yes</td>
+                  <td>
+                    <a class="link-dark" href="#" ><span class="material-icons">visibility</span></a>
+                    <a class="link-dark" href="#"><span class="material-icons">edit</span></a>
+                  </td>
+                </tr>
+              </tbody>
+              
+            </table>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+   ClassicEditor
+      .create( document.querySelector( '#editor' ) )
+     .then( editor => {
+        console.log( editor );
+       } )
+      .catch( error => {
+        console.error( error );
+      } );
+  </script>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
